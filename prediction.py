@@ -4,14 +4,13 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import matplotlib.pyplot as plt
 
-# gets the Iris dataset
-url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
+
 
 # the names for the columns that will be used
 columns = ["sepal_length", "sepal_width", "petal_length", "petal_width", "class"]
 
 # read the dataset to pandas
-iris_df = pd.read_csv(url, header=None, names=columns)
+iris_df = pd.read_csv('iris.data', header=None, names=columns)
 
 # X contains the features, y contains the labels (class)
 X = iris_df[['sepal_length', 'sepal_width', 'petal_length', 'petal_width']]
