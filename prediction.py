@@ -33,7 +33,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy:.2f}")
 
 
-# ser input for feature values
+# user input for feature values
 sepal_length = float(input("Enter sepal length: "))
 sepal_width = float(input("Enter sepal width: "))
 petal_length = float(input("Enter petal length: "))
